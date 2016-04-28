@@ -1,0 +1,53 @@
+// -------------------------
+// Header - Layout
+// -------------------------
+
+.main-header {
+	& {
+		background-color: light-color;
+		height: 70px;
+		left: 0;
+		position: fixed;
+		text-align: left;
+		top: 0;
+		transform-origin: top;
+		transition: all .4s;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	&.-active {
+		background: darken(midnight-blue, 10%);
+		
+		.logo {
+			
+			#webdev {
+				fill: clouds;
+			}
+			
+			#fatec-bg {
+				fill: darken(midnight-blue, 10%);
+			}
+		}
+		
+		.main-nav,
+		.main-nav a {
+			color: clouds;
+		}
+	}
+	
+	> .container {
+		align-items: center;
+		display: flex;
+		height: 100%;
+	}
+	
+	.logo {
+		transition: all .5s;
+		width: 110px;
+	}
+	
+	.main-nav {
+		margin-left: auto;
+	}	
+}

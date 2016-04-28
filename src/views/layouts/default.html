@@ -1,0 +1,50 @@
+{# Variables #}
+{% block variables %}
+
+	{% set host = "http://webdevfatec.github.io" %}
+	{% set page = "" %}
+	{% set assets = "/assets/" %}
+	{% set title = "Home" %}
+	{% set description = "Grupo de estudos sobre desenvolvimento web." %}
+	{% set keywords = "desenvolvimento, front-end, web, html, css, javascript" %}
+	{% set scripts = [] %}
+
+{% endblock %}
+
+{# Imports #}
+{% import "macros/forms.html" as form %}
+{% from "macros/image.html"	import img %}
+
+<!DOCTYPE html><!--[if IE 8]><html class="ie8" lang="pt-br"><![endif]-->
+<!--[if IE 9]><html lang="pt-br" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="pt-br"><!--<![endif]-->
+
+	<head>
+
+		<title>{{ title }} | WebDev FATEC - Grupo de Estudos sobre Desenvolvimento Web</title>
+
+		<!-- [ Includes metatags ]-->
+		{% include "includes/metatags.html" %}
+
+		<!-- [ Includes CSS files ]-->
+		{% include "includes/styles.html" %}
+
+	</head>
+
+<body>
+
+	<!-- [ Includes Header ]-->
+	{% include "includes/header.html" %}
+
+	<!-- [ Includes Content ]-->
+	{% block content %}{% endblock %}
+
+	<!-- [ Includes Footer ]-->
+	{% include "includes/footer.html" %}
+
+	<!-- [ Includes Javascript files ]-->
+	{% include "includes/scripts.html" %}
+
+</body>
+</html>

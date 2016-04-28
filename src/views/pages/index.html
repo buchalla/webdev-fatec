@@ -1,0 +1,18 @@
+{% extends "layouts/default.html" %}
+
+{% block variables %}
+
+	{{ super() }}
+
+	{%
+		set scripts = ["home"]
+	%}
+
+{% endblock %}
+
+{% block content %}
+	<main class="content" role="main">
+		{% include "includes/intro.html" %}
+		{% include "includes/como-funciona.html" %}
+	</main>
+{% endblock %}

@@ -1,0 +1,54 @@
+// -------------------------
+// Base
+// -------------------------
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	color: content-color;
+	ff: content-font;
+	fs: small-font-size;
+
+	+above('medium') {
+		fs: medium-font-size;
+	}
+
+	+above('large') {
+		fs: base-font-size;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: heading-color;
+	fs: convertpxtorem(16);
+}
+
+a {
+	color: link-color;
+}
+
+img {
+	max-width: 100%;
+}
+
+for theme, hex in themes {
+	.{theme}-bg {
+		background-color: hex;
+	}
+	
+	.{theme}-color {
+		color: hex;
+	}
+}

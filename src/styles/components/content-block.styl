@@ -1,0 +1,52 @@
+// -------------------------
+// Content block - Component
+// -------------------------
+
+.content-block {
+	& {
+		clear: fix;
+		line-height: 1.6;
+		padding: convertpxtorem(base-space);
+	}
+	
+	> .title {
+		margin: 0 auto;
+		max-width: 448px;
+		position: relative;
+		
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 45%;
+		}
+		
+		> .logo {
+			background-image: url("/assets/images/logo-webdev-fatec.png");
+			background-image: linear-gradient(transparent, transparent), url("/assets/images/logo-webdev-fatec.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			padding-top: 45%;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	
+	> .description {
+		fs: convertpxtorem(18);
+		margin: (base-space * 3) auto;
+		max-width: 700px;
+				
+		p {
+			margin: 0 auto;
+			
+			& + p {
+				margin-top: base-space;
+			}
+		}
+	}
+}

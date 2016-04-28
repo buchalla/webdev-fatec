@@ -1,0 +1,490 @@
+/*
+* SIMPLE BOILERPLATE
+* https://github.com/mjnr/Simple-Boilerplate
+* -----------------------------------
+* Author: Milson Júnior
+* URL: https://github.com/mjnr
+* -----------------------------------
+* Front na FATEC - 23/04/2016
+* -----------------------------------
+*/
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #2c3e50;
+  font-family: "Open Sans";
+  font-size: 7.5px;
+}
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c3e50;
+  font-size: 1.6rem;
+}
+a {
+  color: #999;
+}
+img {
+  max-width: 100%;
+}
+.primary-theme-bg {
+  background-color: #ecf0f1;
+}
+.primary-theme-color {
+  color: #ecf0f1;
+}
+.secondary-theme-bg {
+  background-color: #2c3e50;
+}
+.secondary-theme-color {
+  color: #2c3e50;
+}
+.tertiary-theme-bg {
+  background-color: #ea6153;
+}
+.tertiary-theme-color {
+  color: #ea6153;
+}
+.quaternary-theme-bg {
+  background-color: lightColor;
+}
+.quaternary-theme-color {
+  color: lightColor;
+}
+@font-face {
+  font-family: 'Choplin';
+  src: url("/assets/fonts/choplin-medium-webfont.eot");
+  src: url("/assets/fonts/choplin-medium-webfont.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/choplin-medium-webfont.woff") format('woff'),
+       url("/assets/fonts/choplin-medium-webfont.ttf") format('truetype'),
+       url("/assets/fonts/choplin-medium-webfont.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/assets/fonts/opensans-regular-webfont.eot");
+  src: url("/assets/fonts/opensans-regular-webfont.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/opensans-regular-webfont.woff") format('woff'),
+       url("/assets/fonts/opensans-regular-webfont.ttf") format('truetype'),
+       url("/assets/fonts/opensans-regular-webfont.svg") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/assets/fonts/opensans-italic-webfont.eot");
+  src: url("/assets/fonts/opensans-italic-webfont.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/opensans-italic-webfont.woff") format('woff'),
+       url("/assets/fonts/opensans-italic-webfont.ttf") format('truetype'),
+       url("/assets/fonts/opensans-italic-webfont.svg") format('svg');
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url("/assets/fonts/opensans-bold-webfont.eot");
+  src: url("/assets/fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/opensans-bold-webfont.woff") format('woff'),
+       url("/assets/fonts/opensans-bold-webfont.ttf") format('truetype'),
+       url("/assets/fonts/opensans-bold-webfont.svg") format('svg');
+  font-style: normal;
+  font-weight: bold;
+}
+._unmargin {
+  margin: 0 !important;
+}
+._align-center {
+  text-align: center !important;
+}
+._align-left {
+  text-align: left !important;
+}
+._align-right {
+  text-align: right !important;
+}
+._to-right {
+  float: right !important;
+}
+._to-left {
+  float: left !important;
+}
+.button {
+  box-shadow: 6px 6px 0 rgba(44,62,80,0.2);
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  outline: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+.button:hover {
+  background-color: #fff;
+  color: inherit;
+}
+.button:active {
+  box-shadow: 3px 3px 0 rgba(44,62,80,0.2);
+}
+.content-block:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.content-block {
+  line-height: 1.6;
+  padding: 1rem;
+}
+.content-block > .title {
+  margin: 0 auto;
+  max-width: 448px;
+  position: relative;
+}
+.content-block > .title:before {
+  content: "";
+  display: block;
+  padding-top: 45%;
+}
+.content-block > .title > .logo {
+  background-image: url("/assets/images/logo-webdev-fatec.png");
+  background-image: -webkit-linear-gradient(transparent, transparent), url("/assets/images/logo-webdev-fatec.svg");
+  background-image: linear-gradient(transparent, transparent), url("/assets/images/logo-webdev-fatec.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 45%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.content-block > .description {
+  font-size: 1.8rem;
+  margin: 30px auto;
+  max-width: 700px;
+}
+.content-block > .description p {
+  margin: 0 auto;
+}
+.content-block > .description p + p {
+  margin-top: 10px;
+}
+.content-section:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.content-section {
+  height: 100vh;
+  padding: 60px 0 20px;
+  position: relative;
+  text-align: center;
+}
+.content-section > .content-block {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+}
+.content-section > .title {
+  font-size: 5rem;
+}
+.main-nav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-nav {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-nav .item {
+  display: inline-block;
+  margin-left: 80px;
+}
+.main-nav .item a {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 85%;
+}
+.content:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.content {
+  padding-top: 100vh;
+}
+.content #intro {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.main-footer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.main-header {
+  background-color: #fff;
+  height: 70px;
+  left: 0;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  width: 100%;
+  z-index: 1;
+}
+.main-header.-active {
+  background: #283848;
+}
+.main-header.-active .logo #webdev {
+  fill: #ecf0f1;
+}
+.main-header.-active .logo #fatec-bg {
+  fill: #283848;
+}
+.main-header.-active .main-nav,
+.main-header.-active .main-nav a {
+  color: #ecf0f1;
+}
+.main-header > .container {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.main-header .logo {
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  width: 110px;
+}
+.main-header .main-nav {
+  margin-left: auto;
+}

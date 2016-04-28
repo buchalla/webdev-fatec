@@ -1,0 +1,25 @@
+// -------------------------
+// Content section - Component
+// -------------------------
+
+.content-section {
+	& {
+		clear: fix;
+		height: 100vh;
+		padding: (double-space * 3) 0 double-space;
+		position: relative;
+		text-align: center;
+	}
+	
+	> .content-block {
+		left: 50%;
+		position: absolute;
+		top: @left;
+		transform: translate(-@top, -@left);
+		width: 80%;
+	}
+	
+	> .title {
+		fs: convertpxtorem(50);
+	}
+}

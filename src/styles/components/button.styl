@@ -1,0 +1,26 @@
+// -------------------------
+// Content block - Component
+// -------------------------
+
+.button {
+	& {
+		box-shadow: 6px 6px 0 rgba(themes.secondary-theme, .2);
+		color: light-color;
+		display: inline-block;
+		fs: convertpxtorem(18);
+		fw: bold;
+		outline: none;
+		padding: base-space double-space;
+		text-transform: uppercase;
+		transition: all .2s;
+	}
+	
+	&:hover {
+		background-color: light-color;
+		color: inherit;
+	}
+		
+	&:active {
+		box-shadow: 3px 3px 0 rgba(themes.secondary-theme, .2);		
+	}
+}
